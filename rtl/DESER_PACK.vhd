@@ -50,19 +50,6 @@ port (
 );
 end component;
 
--- component BUFF
--- generic (
---     N           : integer := 1;
---     B           : integer := 1
--- );
--- port (
---     Clk         : in  std_logic;
---     En          : in  std_logic;
---     D           : in  std_logic_vector (N-1 downto 0);
---     Q           : out std_logic_vector (N-1 downto 0)
--- );
--- end component;
-
 component COUNTER
 generic (
     N           : integer := 4
@@ -77,26 +64,6 @@ port (
     DOUT        : out std_logic_vector (N-1 downto 0)
 );
 end component;
-
--- component FIFO_128x32b_f62to3
--- generic (
---     W           : integer := 32;
---     D           : integer := 128;
---     P           : integer := 16
--- );
--- port (
---     clk         : in  std_logic;
---     srst        : in  std_logic;
---     din         : in  std_logic_vector (W-1 downto 0);
---     wr_en       : in  std_logic;
---     rd_en       : in  std_logic;
---     dout        : out std_logic_vector (W-1 downto 0);
---     full        : out std_logic;
---     empty       : out std_logic;
---     valid       : out std_logic;
---     prog_full   : out std_logic
--- );
--- end component;
 
 component VCONCAT
 generic (
